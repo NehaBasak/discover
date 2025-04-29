@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Avenir;
+    src: url(../asset/text/AvenirLTStd-Medium.otf);
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Common Class */
+body{
+    font-family: Avenir;
+}
+.banner-section{
+    padding: 64px 0;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 64px;
+    margin: 0 auto;
+    width: 100%;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+/* Banner-Section */
+.content{
+    text-align: center;
+}
+.content>h1{
+    font-size: 64px;
+    color: #252525;
+    font-weight: bolder;
+    margin: 24px auto;
+}
+.content>p{
+    font-size: 24px;
+    color: #252525;
+    max-width: 607px;
+    margin: 24px auto;
+}
+.content>a{
+    padding: 18px 48px;
+    background-color: #252525;
+    color: #FFFFFF;
+    border-radius: 16px;
+    border: 2px solid #252525;
+    margin-bottom: 24px;
+}
+.picture{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.picture-art{
+    max-width: 316px;
+    min-height: 288px;
+}
+.picture-art>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+    .banner-section {
+      padding: 32px 0;
+    }
+    .content > h1 {
+      font-size: 32px;
+    }
+    .content > p {
+      font-size: 16px;
+    }
+    .content>a{
+        padding: 10px 30px;
+        background-color: #252525;
+        color: #FFFFFF;
+        border-radius: 16px;
+        border: 2px solid #252525;
+        margin-bottom: 24px;
+    }
+    .picture {
+      gap: 5px;
+    }
+  }
+  
